@@ -1,7 +1,7 @@
 <template>
   <div 
     class="flex flex-col text-[16px]  text-[#485F3B]  md:w-[161.6px] h-[277.83px] rounded-[10px] bg-white shadow-[0px_10px_10px_0px_#00000012]
-      min-[100px]:max-[767px]:w-[40vw]
+      min-[100px]:max-[767px]:w-[40vw] min-[100px]:max-[480px]:h-[32vh] min-[480px]:max-[767px]:h-[50vh]
     "
   >
     <NuxtImg 

@@ -7,7 +7,7 @@
 
   <div 
     class="absolute bg-[#6C846C] rounded-full w-[76px] h-[76px] md:top-[28%] md:left-[22px]  z-20
-      min-[100px]:max-[767px]:top-[26%]  min-[100px]:max-[767px]:left-[-28px]
+      min-[100px]:max-[767px]:top-[22%]  min-[100px]:max-[767px]:left-[-28px]
     "
   >
   </div>
@@ -19,13 +19,13 @@
   </div>
   <div 
     class="absolute bg-[#BCCCAF] rounded-full w-[35px] h-[36px] md:top-[447px] md:left-[54%] z-0
-    min-[100px]:max-[767px]:z-20 min-[100px]:max-[767px]:top-[35%] min-[100px]:max-[767px]:left-[82%]
+    min-[100px]:max-[767px]:z-20 min-[100px]:max-[767px]:top-[31%] min-[100px]:max-[767px]:left-[82%]
     "
   >
   </div>
   <div 
     class="absolute bg-[#183022] rounded-full w-[35px] h-[36px] md:top-[737px] md:left-[202px] z-0
-    min-[100px]:max-[767px]:top-[58%] min-[100px]:max-[767px]:left-[15%]
+    min-[100px]:max-[767px]:top-[52%] min-[100px]:max-[767px]:left-[15%]
     "
   >
   </div>
@@ -141,18 +141,16 @@
       </div>
       <div
         v-else
+        class=""
       >
         <Swiper
-          :slidesPerView="3"
-          :spaceBetween="30"
+        slidesPerView="2"
         >
           <SwiperSlide
-            v-for="data in goodsData" 
-            class="!w-fit"
+            v-for="data in goodsData"   
           >
             <NuxtLink
               :to="`/goods/${data.id}`"
-              class="w-fit block"
             >
               <goods   
                 :key="data.id" 
